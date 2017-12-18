@@ -1,5 +1,5 @@
 Internet Mobile Applications Development Project by Brendan Toolan
-For my porject I decided to make the game tic tac toe. For those that dont know, this game is where there is a 3x3 grid. 
+For my project I decided to make the game tic tac toe. For those that dont know, this game is where there is a 3x3 grid. 
 Two players then decide who is X and who is O.
 The players then take turns putting either a X or O into a spuare. 
 The goal of the game is to try to get three in a row before the other player does.
