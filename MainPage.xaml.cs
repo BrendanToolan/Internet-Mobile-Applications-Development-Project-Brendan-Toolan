@@ -261,6 +261,54 @@ namespace BrendanToolanProject
         void result()
         {
           
+            //Checks to see if there is three X's in a row in the grid x
+            if(Space1.Content=="X" && Space2.Content =="X" && Space3.Content =="X" 
+                || Space1.Content=="X" && Space5.Content =="X" && Space9.Content =="X"
+                || Space1.Content=="X" && Space4.Content=="X" && Space7.Content=="X"
+                || Space2.Content=="X" && Space5.Content=="X" && Space8.Content=="X"
+                || Space3.Content=="X" && Space6.Content=="X" && Space9.Content=="X"
+                || Space7.Content=="X" && Space8.Content=="X" && Space9.Content=="X"
+                || Space4.Content=="X" && Space5.Content=="X" && Space6.Content=="X"
+                || Space3.Content=="X" && Space5.Content=="X" && Space7.Content=="X")
+            {
+                //displays the text "Player X Wins" wins in the text block in the xaml code
+                resultText.Text = "Player X Wins";
+                //disables all the button once there is a winner 
+                Space1.IsEnabled = false;
+                Space2.IsEnabled = false;
+                Space3.IsEnabled = false;
+                Space4.IsEnabled = false;
+                Space5.IsEnabled = false;
+                Space6.IsEnabled = false;
+                Space7.IsEnabled = false;
+                Space8.IsEnabled = false;
+                Space9.IsEnabled = false;
+            }
+
+            //checks to see if there is three O's in a row in the grid
+            if (Space1.Content == "O" && Space2.Content == "O" && Space3.Content == "O"
+               || Space1.Content == "O" && Space5.Content == "O" && Space9.Content == "O"
+               || Space1.Content == "O" && Space4.Content == "O" && Space7.Content == "O"
+               || Space2.Content == "O" && Space5.Content == "O" && Space8.Content == "O"
+               || Space3.Content == "O" && Space6.Content == "O" && Space9.Content == "O"
+               || Space7.Content == "O" && Space8.Content == "O" && Space9.Content == "O"
+               || Space4.Content == "O" && Space5.Content == "O" && Space6.Content == "O"
+               || Space3.Content == "O" && Space5.Content == "O" && Space7.Content == "O")
+            {
+                //displays the text "Player O Wins" in the text block from the xaml
+                resultText.Text = "Player O Wins";
+
+                //disables all buttons once theres a winner
+                Space1.IsEnabled = false;
+                Space2.IsEnabled = false;
+                Space3.IsEnabled = false;
+                Space4.IsEnabled = false;
+                Space5.IsEnabled = false;
+                Space6.IsEnabled = false;
+                Space7.IsEnabled = false;
+                Space8.IsEnabled = false;
+                Space9.IsEnabled = false;
+            }
         }
     }
 }
