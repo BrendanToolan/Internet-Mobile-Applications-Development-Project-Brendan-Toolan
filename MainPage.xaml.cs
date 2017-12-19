@@ -142,6 +142,125 @@ namespace BrendanToolanProject
             result();
         }
 
-        
+        //Method that decided what will be entered in sixth space called Space6
+        private void onClick5(object sender, RoutedEventArgs e)
+        {
+            //if statement to see if it a X or a O
+            if (playerTurn == 0)
+            {
+                Space6.Content = "O";
+                playerTurn++;
+            }
+            else if (playerTurn == 1)
+            {
+                Space6.Content = "X";
+                playerTurn--;
+            }
+
+            //This piece of code makes sure the user cannot change 
+            //whats in the spuare as it disables the button
+            Space6.IsEnabled = false;
+
+            //checks if theres a winner
+            result();
+        }
+
+        //Method that decided what will be entered in seventh space called Space7
+        private void onClick6(object sender, RoutedEventArgs e)
+        {
+            //if statement to see if it a X or a O
+            if (playerTurn == 0)
+            {
+                Space7.Content = "O";
+                playerTurn++;
+            }
+            else if (playerTurn == 1)
+            {
+                Space7.Content = "X";
+                playerTurn--;
+            }
+
+            //This piece of code makes sure the user cannot change 
+            //whats in the spuare as it disables the button
+            Space7.IsEnabled = false;
+
+            //checks if theres a winner
+            result();
+        }
+
+        //Method that decided what will be entered in eighted space called Space8
+        private void onClick7(object sender, RoutedEventArgs e)
+        {
+            //if statement to see if it a X or a O
+            if (playerTurn == 0)
+            {
+                Space8.Content = "O";
+                playerTurn++;
+            }
+            else if (playerTurn == 1)
+            {
+                Space8.Content = "X";
+                playerTurn--;
+            }
+
+            //This piece of code makes sure the user cannot change 
+            //whats in the spuare as it disables the button
+            Space8.IsEnabled = false;
+
+            //checks if theres a winner
+            result();
+        }
+
+        //Method that decided what will be entered in ninth space called Space9
+        private void onClick8(object sender, RoutedEventArgs e)
+        {
+            //if statement to see if it a X or a O
+            if (playerTurn == 0)
+            {
+                Space9.Content = "O";
+                playerTurn++;
+            }
+            else if (playerTurn == 1)
+            {
+                Space9.Content = "X";
+                playerTurn--;
+            }
+
+            //This piece of code makes sure the user cannot change 
+            //whats in the spuare as it disables the button
+            Space9.IsEnabled = false;
+
+            //checks if theres a winner
+            result();
+        }
+
+        //Code for the restart button that resets the button and clears all the X's and O's and the result text from the screen 
+        private void restart(object sender, RoutedEventArgs e)
+        {
+            Space1.Content = "";
+            Space1.IsEnabled = true;
+            Space2.Content = "";
+            Space2.IsEnabled = true;
+            Space3.Content = "";
+            Space3.IsEnabled = true;
+            Space4.Content = "";
+            Space4.IsEnabled = true;
+            Space5.Content = "";
+            Space5.IsEnabled = true;
+            Space6.Content = "";
+            Space6.IsEnabled = true;
+            Space7.Content = "";
+            Space7.IsEnabled = true;
+            Space8.Content = "";
+            Space8.IsEnabled = true;
+            Space9.Content = "";
+            Space9.IsEnabled = true;
+            resultText.Text = "";
+        }
+
+        void result()
+        {
+          
+        }
     }
 }
