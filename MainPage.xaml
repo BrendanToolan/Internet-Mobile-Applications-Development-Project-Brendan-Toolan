@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="BrendanToolanProject.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BrendanToolanProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+        <TextBlock Text="Tic Tac Toe" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="130"></TextBlock>
+        <Button x:Name="Space1" Background="LightSalmon" FontSize="50" Margin="400,0,0,100" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick"></Button>
+        <Button x:Name="Space2" Background="LightSalmon" FontSize="50" Margin="600,0,0,100" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick1"></Button>
+        <Button x:Name="Space3" Background="LightSalmon" FontSize="50" Margin="800,0,0,100" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick2"></Button>
+        <Button x:Name="Space4" Background="LightSalmon" FontSize="50" Margin="400,100,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick3"></Button>
+        <Button x:Name="Space5" Background="LightSalmon" FontSize="50" Margin="600,100,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick4"></Button>
+        <Button x:Name="Space6" Background="LightSalmon" FontSize="50" Margin="800,100,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick5"></Button>
+        <Button x:Name="Space7" Background="LightSalmon" FontSize="50" Margin="400,300,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick6"></Button>
+        <Button x:Name="Space8" Background="LightSalmon" FontSize="50" Margin="600,300,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick7"></Button>
+        <Button x:Name="Space9" Background="LightSalmon" FontSize="50" Margin="800,300,0,0" Height="100" Width="200" BorderThickness="3" BorderBrush="Black" Click="onClick8"></Button>
+
+        <Button x:Name="reset" Background="Red" Content="Reset" FontSize="20" Height="50" Width="100" VerticalAlignment="Top" Margin="670,180,0,0" Click="restart"></Button>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom">
+            <TextBlock x:Name="resultText" FontSize="50"></TextBlock>
+        </StackPanel>
+
+    </Grid>
+
+</Page>
